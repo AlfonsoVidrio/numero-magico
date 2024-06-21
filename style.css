@@ -109,3 +109,61 @@ button {
     font-size: 32px;
     font-weight: 400;
 }
+
+@media only screen and (max-width: 600px) {
+    .container__imagen-persona {
+        display: none;
+    }
+
+    .container {
+
+        width: 90%;
+        height: auto; 
+        flex-direction: column;
+    }
+
+    .container__contenido {
+        position: relative; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .container__informaciones, .container__botones {
+        width: 100%; 
+    }
+
+    h1 {
+        font-size: 48px; 
+        padding-bottom: 1rem;
+    }
+
+    .texto__parrafo, .container__input, .container__boton {
+        font-size: 18px; 
+    }
+
+    .container__botones {
+        flex-direction: column; 
+        gap: 1em;
+    }
+
+    .container__boton, .container__input {
+        padding: 8px 2px; 
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .container__imagen-persona {
+        display: none;
+    }
+
+    .container__contenido {
+        position: relative; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+}
